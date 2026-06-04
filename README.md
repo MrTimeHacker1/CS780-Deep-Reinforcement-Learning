@@ -21,6 +21,7 @@ Where:
 * $\gamma \in [0, 1)$ is the discount factor.
 
 Because the true state $s_t$ is hidden, the agent must optimize its policy $\pi$ over a history of observations and actions $h_t = (o_0, a_0, o_1, a_1, \dots, o_t)$ to maximize the expected cumulative discounted reward:
+
 $$J(\pi) = \mathbb{E}_{\pi} \left[ \sum_{t=0}^{T} \gamma^t R(s_t, a_t) \right]$$
 
 This introduces severe challenges for standard RL agents:
